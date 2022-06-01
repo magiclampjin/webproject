@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-refer rer" />
 <title>데이터 마이닝</title>
 
+<!-- <script src="script.js"></script> -->
 <script src="script.js"></script>
 </head>
 
@@ -142,8 +143,8 @@
 				</header>
 				<section class="content">
 					<p>
-						<!-- <iframe src="https://news.nate.com/search?q=data%20mining" width="450" height="600"></iframe>
-						<iframe src="http://www.riss.kr/search/Search.do?isDetailSearch=N&searchGubun=true&viewYn=OP&queryText=&strQuery=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D&exQuery=image_yn%3A1%E2%97%88&exQueryText=%EC%9B%90%EB%AC%B8%EC%9C%A0%EB%AC%B4+%5B%EC%9B%90%EB%AC%B8%EC%9E%88%EC%9D%8C%5D%40%40image_yn%3A1%E2%97%88&order=%2FDESC&onHanja=false&strSort=RANK&p_year1=&p_year2=&iStartCount=0&orderBy=&mat_type=&mat_subtype=&fulltext_kind=&t_gubun=&learning_type=&ccl_code=&inside_outside=&fric_yn=&image_yn=&gubun=&kdc=&ttsUseYn=&l_sub_code=&fsearchMethod=search&sflag=1&isFDetailSearch=N&pageNumber=1&resultKeyword=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D&fsearchSort=&fsearchOrder=&limiterList=&limiterListText=&facetList=&facetListText=&fsearchDB=&icate=re_a_kor&colName=re_a_kor&pageScale=10&isTab=Y&regnm=&dorg_storage=&language=&language_code=&clickKeyword=&relationKeyword=&query=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D" width="450" height="600"></iframe> -->
+						<iframe src="https://news.nate.com/search?q=data%20mining" width="450" height="600"></iframe>
+						<iframe src="http://www.riss.kr/search/Search.do?isDetailSearch=N&searchGubun=true&viewYn=OP&queryText=&strQuery=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D&exQuery=image_yn%3A1%E2%97%88&exQueryText=%EC%9B%90%EB%AC%B8%EC%9C%A0%EB%AC%B4+%5B%EC%9B%90%EB%AC%B8%EC%9E%88%EC%9D%8C%5D%40%40image_yn%3A1%E2%97%88&order=%2FDESC&onHanja=false&strSort=RANK&p_year1=&p_year2=&iStartCount=0&orderBy=&mat_type=&mat_subtype=&fulltext_kind=&t_gubun=&learning_type=&ccl_code=&inside_outside=&fric_yn=&image_yn=&gubun=&kdc=&ttsUseYn=&l_sub_code=&fsearchMethod=search&sflag=1&isFDetailSearch=N&pageNumber=1&resultKeyword=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D&fsearchSort=&fsearchOrder=&limiterList=&limiterListText=&facetList=&facetListText=&fsearchDB=&icate=re_a_kor&colName=re_a_kor&pageScale=10&isTab=Y&regnm=&dorg_storage=&language=&language_code=&clickKeyword=&relationKeyword=&query=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D" width="450" height="600"></iframe>
 					</p>
 				</section>
 		</section>
@@ -189,27 +190,27 @@
 		   			<form>
 				        <ul id="quiz_answers">
 				          <li>
-				            <input type="radio" name="answer" id="a" class="answer" value="1">
-				            <label for="a" id="a_text">Answer text</label>
+				            <input type="radio" name="answer" value="1">
+				            <label id="a_text">Answer text</label>
 				          </li>
 
 				          <li>
-				            <input type="radio" name="answer" id="b" class="answer" value="2">
-				            <label for="b" id="b_text">Answer text</label>
+				            <input type="radio" name="answer" value="2">
+				            <label id="b_text">Answer text</label>
 				          </li>
 
 				          <li>
-				            <input type="radio" name="answer" id="c" class="answer" value="3">
-				            <label for="c" id="c_text">Answer text</label>
+				            <input type="radio" name="answer" value="3">
+				            <label id="c_text">Answer text</label>
 				          </li>
 
 				          <li>
-				            <input type="radio" name="answer" id="d" class="answer" value="3">
-				            <label for="d" id="d_text">Answer text</label>
+				            <input type="radio" name="answer" value="4">
+				            <label id="d_text">Answer text</label>
 				          </li>
 				        </ul>
-				          <button id="submitbtn" onclick="submit()">누르면 퀴즈가 시작됩니다.</button>
-			      </form>
+				          </form>
+				          <button id="subbtn" onclick="sm()">누르면 퀴즈가 시작됩니다.</button>
 			    </section> 
 		 	</div>
 	    </section>
