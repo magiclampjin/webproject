@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-refer rer" />
+<title>데이터 마이닝</title>
+
+<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
+</head>
+
+<body onload="printDate();"> <!--메인 화면 우측 하단에 날짜 출력하는 함수-->
+	<!--상단바 영역-->
+	<header id="head">
+		<div class="header_container">
+			<div class="nav_bar">
+				<div class="logo">
+					<h1>
+						<a href="#main">
+							<i class="fa-solid fa-person-digging"></i>
+							<i class="fa-solid fa-database"></i>
+							&nbsp;<span>D</span>ata <span>M</span>ining
+						</a>
+					</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#definition">Definition</a></li>
+						<li>|</li>
+						<li><a href="#process">Process</a></li>
+						<li>|</li>
+						<li><a href="#technique">Technique</a></li>
+						<li>|</li>
+						<li><a href="#reference">Reference</a></li>
+						<li>|</li>
+						<li><a href="#usecase">Usecase</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--상단바 영역-->
+
+
+	<!--메인 화면 영역-->
+	<section id="main">
+		<div class = "main_container">
+			<div>
+				<h1>BIG DATA,<span></span></h1>
+				<h1>Data Mining<span></span></h1>
+				<a href="#" id="contact_href"><button type="button" class="ctbtn" onclick="movecontact()">CONTACT</button></a>
+				<div id="date"></div>
+			</div>
+		</div>`
+	</section>
+	<!--메인 화면 영역-->
+
+
+	<!--본문영역-->
+	<section id="wrap"> 
+
+		<!--정의 영역-->
+		<section id="definition">
+			<div class = "container">
+				<header class="definition_title">
+					<h1 class="section_title"><span>D</span>EFINITION</h1>
+				</header>
+				<section class="content">
+					<p>
+						<img src="datamining.jpg" width="450" height="400">
+						<p class="source">(출처: IT용어사전)</p>
+					</p>
+					<p>빅데이터를 분석하는 기술로 관찰이나 실험, 조사를 통해서 얻은 사실을 뜻하는 데이터와 광산에서 광석을 캐내는 채굴을 뜻하는 마이닝이 만나 만들어진 단어이며, 광산에서 광석을 캐내는 것처럼 수많은 데이터 속에서 유의미한 정보를 찾아내는 것을 의미한다. 즉, 대규모로 저장된 데이터 안에서 관계나 통계적인 규칙, 패턴을 탐색하고 찾아내는 일련의 과정들로, 데이터의 형태와 범위가 다양해지고 그 규모가 방대해지는 빅데이터의 등장으로 데이터 마이닝의 중요성은 부각되고 있다.</p>
+				</section>
+			</div>
+		</section>
+		<!--정의 영역--> 
+
+
+		<!--프로세스 영역-->
+		<section id="process">
+			<div class = "container">
+				<header class="process_title">
+					<h1 class="section_title"><span>P</span>ROCESS</h1>
+				</header>
+				<section class="process_body">
+					<div class="content">
+						데이터 마이닝의 방법론은 다양하지만 잘 알려진 방법론으로는<br>크게 CRISP-DM, SEMMA, KDD의 3가지가 있다.<br>각 방법론은 필요에 따라 변형되어 적용되기도 한다. 
+					<div>
+					<div class = "process_items">
+						<div class="process_item">
+							<div class="icon"><i class="fa-solid fa-database"></i></div>
+							<h2>CRISP-DM</h2>
+							<p>전 세계에서 가장 많이 사용되는 데이터 마이닝 표준 방법론으로 계층적 프로세스 모델이다. 이 방법론의 절차는 6단계로 이루어져 있으며 각 단계는 순차적으로 진행되는 것이 아니라 필요에 따라 반복 수행되며 분석의 품질을 향상한다.</p>
+						</div>
+						<div class="process_item">
+							<div class="icon"><i class="fa-solid fa-database"></i></div>
+							<h2>SEMMA</h2>
+							<p>SAS에서 사용하는 방법론으로 샘플 단계, 탐색 단계, 수정 단계, 모델 단계, 평가 단계의 5단계로 구성된 프로세스 모델로, 각 단계 실행 후 문제가 발생하면 전 단계로 돌아가 피드백이 되는 프로세스 형식을 가지고 있다.</p>
+						</div>
+						<div class="process_item">
+							<div class="icon"><i class="fa-solid fa-database"></i></div>
+							<h2>KDD</h2>
+							<p>데이터를 통해 통계적 패턴이나 지식을 찾을 수 있도록 정리한 데이터 마이닝 프로세스로 선택, 전처리, 변환, 데이터 마이닝, 결과 평가의 5단계로 이루어져 진행된다. 만약 결과가 충족되지 않았다면, 데이터 선택과 데이터 마이닝 절차를 반복 수행하는 방식으로 진행한다. </p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<!--프로세스 영역-->
+
+
+		<!--분석기술 영역-->
+		<section id="technique">
+			<div class = "container">
+				<header class="technique_title">
+					<h1 class="section_title"><span>A</span>NALYTICAL <span>T</span>ECHNIQUE</h1>
+				</header>
+				<section class="content">
+					<p>
+						<canvas id="technique_canvas" width="450" height="400"></canvas>
+						<script>
+							var canvas = document.getElementById("technique_canvas");
+							var context = canvas.getContext("2d");
+							var img = new Image();
+							img.onload = function(){ context.drawImage(img,0,0,canvas.width, canvas.height);}
+							img.src="analysis.jpg";
+						</script>
+					</p>
+					<p>데이터 방법론이 다양한 것처럼 데이터 마이닝을 사용하는 분석 기법들의 종류도 다양하다. 데이터 특성화, 차별화를 통해 목표 변수를 설명 변수의 함수모델로 생성하는 작업인 예측 모델링, 데이터에 강하게 연관되는 특징을 설명하는 패턴을 발견하는 연관 분석, 같은 군집에 속하는 관측을 다른 군집에 속하는 관측보다 더 유사하도록 긴밀하게 관련된 관측 그룹을 탐색하는 군집분석 등 다양한 범위의 데이터 분석과 지식 발견 작업을 한다.</p>
+				</section>
+			</div>
+		</section>
+		<!--분석기술 영역--> 
+
+
+		<!--참고 자료 영역-->
+		<section id="reference">
+				<header class="reference_title">
+					<h1 class="section_title"><span>R</span>EFERENCE</h1>
+				</header>
+				<section class="content">
+					<p>
+						<iframe src="https://news.nate.com/search?q=data%20mining" width="450" height="600"></iframe>
+						<iframe src="http://www.riss.kr/search/Search.do?isDetailSearch=N&searchGubun=true&viewYn=OP&queryText=&strQuery=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D&exQuery=image_yn%3A1%E2%97%88&exQueryText=%EC%9B%90%EB%AC%B8%EC%9C%A0%EB%AC%B4+%5B%EC%9B%90%EB%AC%B8%EC%9E%88%EC%9D%8C%5D%40%40image_yn%3A1%E2%97%88&order=%2FDESC&onHanja=false&strSort=RANK&p_year1=&p_year2=&iStartCount=0&orderBy=&mat_type=&mat_subtype=&fulltext_kind=&t_gubun=&learning_type=&ccl_code=&inside_outside=&fric_yn=&image_yn=&gubun=&kdc=&ttsUseYn=&l_sub_code=&fsearchMethod=search&sflag=1&isFDetailSearch=N&pageNumber=1&resultKeyword=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D&fsearchSort=&fsearchOrder=&limiterList=&limiterListText=&facetList=&facetListText=&fsearchDB=&icate=re_a_kor&colName=re_a_kor&pageScale=10&isTab=Y&regnm=&dorg_storage=&language=&language_code=&clickKeyword=&relationKeyword=&query=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%A7%88%EC%9D%B4%EB%8B%9D" width="450" height="600"></iframe>
+					</p>
+				</section>
+		</section>
+		<!--참고 자료 영역--> 
+
+
+		<!--활용사례 영역-->
+		<section id="usecase">
+			<div class = "container">
+				<header class="usecase_title">
+					<h1 class="section_title"><span>U</span>ESCASE</h1>
+				</header>
+				<section class="content">
+					<div class="usecase_imgs">
+						<table>
+							<tbody>
+								<tr>
+									<td><img src="usecase1.jpg" title="맥주와 기저귀를 함께 진열해 판매하는 마트"></td>
+									<td><img src="usecase3.jpg" title="인터넷 쇼핑몰 상품 추천 시스템"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>데이터 마이닝은 다양한 분야에서 활용되고 있다. 많은 활용 사례가 있지만 가장 대표적인 사례들은 다음과 같다. 먼저, 미국에서 맥주와 기저귀의 판매량이 서로 강한 연관관계를 가지고 있다는 것을 알아내 이를 함께 진열함으로써 수익을 높인 사례가 있고, 국가정보기관에서 엄청난 양으로 도청되는 통신들 사이에서 가장 중요한 통신을 찾아내기 위해서 전문가들이 네트워크를 위협하는 문제가 있는지를 알아내는 과정에서도 사용된 사례가 있으며, 인터넷 쇼핑몰의 상품 추천 시스템에서 고객들의 소비패턴이나 성향을 분석하여 적합한 상품을 추천하는 기능을 만든 사례가 있다. 데이터 마이닝은 이외에도 금융, 교육, 경영 등 다양한 분야에서 사용되고 있다.</p>
+				</section>
+			</div>
+		</section>
+		<!--활용사례 영역--> 
+
+
+		<!--퀴즈 영역-->
+		 <section id="quiz">
+		 	<header>
+		 		<h1 class="section_title"><span>Q</span>uiz</h1>
+		 	</header>
+
+		 	<div class="container">
+		 		<div id="timer">00:00</div>
+		     	<header id="quiz_header">
+		        	<h2 id="question">제한 시간 20초 안에 각 문항을 푸세요.</h2>
+		   		</header> 
+		   		<section id="quiz_content">
+		   			<form>
+				        <ul id="quiz_answers">
+				          <li>
+				            <input type="radio" name="answer" value="1">
+				            <label id="a_text">Answer text</label>
+				          </li>
+
+				          <li>
+				            <input type="radio" name="answer" value="2">
+				            <label id="b_text">Answer text</label>
+				          </li>
+
+				          <li>
+				            <input type="radio" name="answer" value="3">
+				            <label id="c_text">Answer text</label>
+				          </li>
+
+				          <li>
+				            <input type="radio" name="answer" value="4">
+				            <label id="d_text">Answer text</label>
+				          </li>
+				        </ul>
+				          </form>
+				          <button id="subbtn" onclick="sm()">누르면 퀴즈가 시작됩니다.</button>
+			    </section> 
+		 	</div>
+	    </section>
+		<!--퀴즈 영역-->
+
+
+		<!--작성자 연락처 영역-->
+		<section id="contact">
+			<div class="contact_container">
+				<div><h1 class="section_title"><span>C</span>ONTACT <span>I</span>NFO</div>
+				<div class="contact_box">
+					<div class="contact_item">
+						<div class="icon"><i class="fa-solid fa-phone"></i></div>
+						<div class="contact_info">
+							<h1>Phone</h1><br>
+							<h3>010-8**5-36**</h3>
+							<h3>0*3-2*3-36**</h3>
+						</div>
+					</div>
+					<div class="contact_item">
+						<div class="icon"><i class="fa-solid fa-envelope"></i></div>
+						<div class="contact_info">
+							<h1>Email</h1><br>
+							<h3>anlfzm@naver.com</h3>
+							<h3>eyungenius@gmail.com</h3>
+						</div>
+					</div>
+						<div class="contact_item">
+						<div class="icon"><i class="fa-brands fa-instagram-square"></i></div>
+						<div class="contact_info">
+							<h1>Instagram</h1><br>
+							<h3>@je__enuy</h3><br>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</section>
+		<!--작성자 연략처 영역-->
+
+	</section>
+	<!--본문영역-->
+
+
+	<!--꼬리 영역-->
+	<footer id="foot">
+		<div class="footer_container">
+			<div class="subject">
+				<h1><span>D</span>ata <span>M</span>ining</h1>
+				<h2>Webprogramming Project</h2>
+				<div class="foot_items">
+					<div class="icon">
+						<a href="https://www.instagram.com/je__enuy/"><i class="fa-brands fa-instagram-square"></i></a>
+					</div>
+					<div class="icon">
+						<a href="https://github.com/magiclampjin"><i class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+			<p>Copyright ⓒ 2022.
+			</p>
+		</div>
+	</footer>
+	<!--꼬리 영역-->
+
+</body>
+</html>
