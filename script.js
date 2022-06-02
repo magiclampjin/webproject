@@ -38,8 +38,8 @@ var timerID;
 
 
 function quiztimer(){	
-	var sec=5;
-	var time=5000;
+	var sec=20;
+	var time=20000;
 	var timer = document.getElementById("timer");
 	timer.style.color="black";
 	timer.innerHTML="";
